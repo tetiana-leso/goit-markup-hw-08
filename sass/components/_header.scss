@@ -1,0 +1,136 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.nav,
+.nav__list,
+.header-contacts {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav__list,
+.header-contacts {
+    gap: 50px;
+}
+
+
+.nav__link,
+.header-contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--primary-txt-cl);
+
+}
+
+.nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--primary-txt-cl);
+    transition: color 250ms var(--cubic);
+
+    &:hover, &:focus {
+        color: var(--accent-cl);
+     }
+}
+
+.nav__link--bottom {
+    position: relative;
+
+    &::after {
+    position: absolute;
+    content: '';
+    bottom: -1px;
+    display: block;
+    background-color: #188ce8;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 250ms var(--cubic);
+    }
+}
+
+
+.header-contacts {
+    margin-left: auto;
+    color: var(--secondary-txt-cl);
+}
+
+.header-contacts__email,
+.header-contacts__phone {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: #757575;
+    transition: color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-cl);
+        }
+
+
+}
+
+.nav__link--current {
+    color: var(--accent-cl);
+
+    &::after {
+            position: absolute;
+            content: '';
+            bottom: -1px;
+            display: block;
+            background-color: #188ce8;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            transform: scaleX(1);
+        }
+}
+
+
+.header-contacts__icon {
+    margin-right: 10px;
+
+    &:hover,
+    &:focus {
+    fill: #2196F3;
+    }
+    
+}
+
+.header-contacts__icon {
+    fill: currentColor;
+}
+
+
+.logo {
+    margin-right: 93px;
+    margin-left: auto;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--accent-cl);
+
+    }
+
+.logo--header-accent {
+    color: var(--dark-bg-cl);
+
+}

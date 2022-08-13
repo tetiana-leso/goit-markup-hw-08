@@ -1,0 +1,39 @@
+.feature {
+    padding-bottom: 0;
+
+
+}
+
+.feature__list {
+    display: flex;
+    gap: 30px;
+
+}
+
+.feature__title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+
+}
+
+.feature__text {
+    width: 270px;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-cl);
+}
+
+.thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+
+}

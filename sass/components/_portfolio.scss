@@ -1,0 +1,141 @@
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+
+}
+
+.filters__btn {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.03em;
+    color: var(--primary-txt-cl);
+    background-color: var(--light-bg-cl);
+    border: none;
+    transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+
+       
+
+}
+
+
+.filters__btn:hover,
+.hfilters__btn:focus,
+.filters__btn--current {
+    color: var(--white-cl);
+    background-color: var(--accent-btn-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.projects__link {
+    display: block;
+    transition: box-shadow 250ms var(--cubic);
+   
+    
+}
+
+
+
+.projects__wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.projects__overlay {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms var(--cubic);
+
+    
+    
+}
+
+.projects__link:hover,
+.projects__link:focus  {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+       transform: translateY(0);
+
+}
+
+.projects__overlay-text {
+    padding: 63px 24px;
+   
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+    
+
+ 
+}
+
+.projects__link:hover .projects__overlay,
+.projects__link:focus .projects__overlay
+ {
+    transform: translateY(0);
+}
+
+
+
+.projects__descr {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.projects__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--primary-txt-cl);
+
+}
+
+.projects__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    color: var(--secondary-txt-cl);
+}
+
+
+
+
+
+
+
+
