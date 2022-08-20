@@ -1,8 +1,23 @@
 .filters {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    gap: 8px;
+    flex-wrap: wrap;
+    // justify-content: center;
+    // margin-bottom: 50px;
+    // gap: 8px;
+    column-gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+
+
+
+    @media screen and (min-width: 768px) {
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
 
 }
 
@@ -36,10 +51,33 @@
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 30px;
 
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+}
+
+
+.projects__item {
+
+    @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+    
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+        }
 }
 
 .projects__link {
