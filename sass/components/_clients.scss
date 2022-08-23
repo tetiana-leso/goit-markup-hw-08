@@ -20,20 +20,17 @@
 /* Clients-icons */
 
 .clients__list {
-    display: flex;
-    text-align: center;
-    gap: 30px;
-    color: #AFB1B8;
-    flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        color: #AFB1B8;
 
-        @media screen and (min-width: 768px) {
-        
-        flex-direction: row;
-        flex-wrap: wrap;
-        
-            }
-
+        @media screen and (max-width: 1199px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
 }
+
 
 .clients__item {
 
