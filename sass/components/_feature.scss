@@ -7,7 +7,7 @@
 .feature__list {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    
     gap: 30px;
     
     @media screen and (min-width: 768px) {
@@ -19,6 +19,7 @@
 }
 
 .feature__item {
+    
     @media screen and (min-width: 480px) {
         width: 450px;
         }
@@ -31,13 +32,12 @@
         width: 270px;
         
     }
-
-
 }
 
 
 
 .feature__title {
+    text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 700;

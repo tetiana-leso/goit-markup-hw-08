@@ -126,7 +126,10 @@
 .footer-socials {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    @media screen and (max-width: 1199px) {
+            align-items: center;
+    
+        }
 }
 
 .footer__title {
@@ -144,10 +147,10 @@
 
 .socials-list {
     display: flex; 
-}
 
-.socials__item:not(:last-child) {
+&__item:not(:last-child) {
     margin-right: 10px;
+}
 }
 
 /* FOOTER FORM */
@@ -189,10 +192,11 @@
     &__label {
         margin-bottom: 20px;
 
-        font-weight: 700;
-        line-height: 1.14;
-        text-transform: uppercase;
-
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
         color: #FFFFFF;
     }
 

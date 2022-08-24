@@ -19,6 +19,7 @@
 body {
   font-family: var(--main-font);
   color: var(--primary-txt-cl);
+  font-size: 14px;
 }
 
 .section {
@@ -500,6 +501,8 @@ img {
 }
 
 .hero-btn {
+  min-width: 200px;
+  padding: 10px 30px;
   border-radius: 4px;
   font-weight: 700;
   line-height: 1.875;
@@ -528,7 +531,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -559,6 +561,7 @@ img {
 }
 
 .feature__title {
+  text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -1000,9 +1003,13 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .footer-socials {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer__title {
@@ -1022,8 +1029,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-
-.socials__item:not(:last-child) {
+.socials-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -1088,7 +1094,9 @@ img {
 .subscribe-field__label {
   margin-bottom: 20px;
   font-weight: 700;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -1217,6 +1225,7 @@ img {
   transition: color 250ms var(--cubic), background-color 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
   transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
   transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic), -webkit-box-shadow 250ms var(--cubic);
+  border-radius: 4px;
 }
 
 .filters__btn:hover,
@@ -1254,7 +1263,14 @@ img {
 }
 
 .projects__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow 250ms var(--cubic);
   transition: -webkit-box-shadow 250ms var(--cubic);
   transition: box-shadow 250ms var(--cubic);
@@ -1315,6 +1331,9 @@ img {
 }
 
 .projects__descr {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
