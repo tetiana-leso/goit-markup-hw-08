@@ -1,15 +1,19 @@
 /* header styles */
 .header {
     position: relative;
+    
+    border-bottom: 1px solid #ececec;
 
-    background-color: var(--white-bg-cl);
+    @media screen and (max-width: 767px) {
+            padding: 10px 0px;
+    
+        }
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        border-bottom: 1px solid #ececec;
+   
     }
 }
 
@@ -211,14 +215,22 @@
     color: var(--secondary-txt-cl);
 
     font-weight: 500;
-    line-height: 1.14;
+    line-height: 1.17;
+    font-size: 12px;
     letter-spacing: 0.02em;
     text-decoration: none;
 
     transition: color 250ms var(--cubic);
 
     &--mobile {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 479px) {
+                font-size: 24px;
+                line-height: 1.18;
+                
+                color: var(--accent-cl);
+                
+            }
+        @media screen and (min-width: 480px) and (max-width:  767px) {
             font-size: 34px;
             line-height: 1.18;
 

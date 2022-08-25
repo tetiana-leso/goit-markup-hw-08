@@ -119,14 +119,15 @@
 .projects__overlay-text {
     padding: 63px 24px;
    
-    font-weight: 400;
     font-size: 18px;
     line-height: calc(28 / 18);
     letter-spacing: 0.03em;
 
     color: #FFFFFF;
     
-
+    @media screen and (max-width: 479px) {
+        font-size: 14px;
+    }
  
 }
 
