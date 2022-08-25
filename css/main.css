@@ -820,6 +820,9 @@ img {
   }
 }
 
+.clients__item {
+  width: 210px;
+}
 @media screen and (min-width: 480px) {
   .clients__item {
     width: 210px;
